@@ -1,0 +1,25 @@
+<div class="container">
+  <div #items class="items">
+    <div #item class="item" *ngFor="let el of [1,1,1,1,1,1,11,111,1,1,1,1,]; let i = index">
+      <div class="image-parent">
+        <img src="../assets/image1.jpg" alt="">
+      </div>
+      <div class="title">
+        Nice Image {{i}}
+      </div>
+      <div class="description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatem cupiditate veritatis inventore dolor incidunt doloribus, nisi molestias blanditiis voluptates! Laborum amet voluptatum eos tenetur, architecto voluptatibus sunt fuga illo?
+      </div>
+    </div>
+
+  </div>
+  <div   class="arrow arrow-right" (click)="onClickRight(items)">
+    
+  </div>
+  <div class="arrow arrow-left" (click)="onClickLeft(items)">
+  
+  </div>
+
+
+
+</div>
